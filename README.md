@@ -9,7 +9,6 @@ Osint-serv est un outil puissant de recherche OSINT (Open Source Intelligence) c
 - [Installation](#installation)
 - [Utilisation](#utilisation)
 - [Contributions](#contributions)
-- [License](#license)
 - [Contact](#contact)
 
 ## Description
@@ -116,30 +115,13 @@ Les contributions sont les bienvenues ! Si vous souhaitez améliorer ce projet, 
 
 
 
-License
-
-Ce projet est sous la licence MIT - voir le fichier LICENSE pour plus de détails.
-
 Contact
 
-Pour toute question ou demande d'informations supplémentaires, n'hésitez pas à me contacter via GitHub ou à m'envoyer un e-mail à : votre-email@example.com.
+Pour toute question ou demande d'informations supplémentaires, n'hésitez pas à me contacter via GitHub ou à m'envoyer un e-mail à : githubcontactosint@gmail.com.
 
 
 ---
+
+Note : Ce projet a été copié de https://github.com/lulz3xploit/LittleBrother.
 
 Merci d'avoir consulté ce projet ! J'espère qu'il vous sera utile.
-
-### Explication des sections :
-
-- **Table des matières** : Un sommaire pour naviguer facilement dans le README.
-- **Description** : Une introduction claire sur ce que fait le projet, en expliquant son but et son importance.
-- **Fonctionnalités** : Présentation des principales fonctionnalités offertes par l'outil.
-- **Installation** : Instructions détaillées pour installer le projet et ses dépendances.
-- **Utilisation** : Explication des commandes disponibles et des exemples pour utiliser l'outil.
-- **Contributions** : Comment les autres peuvent contribuer au projet (fork, branch, PR).
-- **License** : Le type de licence sous laquelle le projet est distribué.
-- **Contact** : Informations pour joindre le propriétaire du projet en cas de questions.
-
----
-
-N'oubliez pas de personnaliser certains détails comme l'email de contact et les spécifications exactes de votre projet. Ce modèle est conçu pour être clair et complet tout en restant concis.
