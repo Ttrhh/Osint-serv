@@ -1,233 +1,81 @@
-Table des Matières
-=
 
-* [Nous Soutenir](#Nous-Soutenir)
+# Osint-serv  
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org)  
+Outil d’OSINT polyvalent avec fonctions de lookup, profilage, test de charge, crash-site et plus.
 
-* [Contributeurs](#Contributeurs)
+---
 
-* [Read-Only](#ReadOnly)
+## Fonctionnalités
 
-* [LittleBrother](#LittleBrother)
+- **Lookup complet :**  
+  - Recherche de personnes, usernames, adresses, IPs, emails, BSSID, téléphones
+  - Tracer des emails jusqu'à leur IP
+  - Graph Facebook, recherche Google, Instagram, Twitter
+- **Profiler :**  
+  - Créer, visualiser et analyser des profils de cibles
+- **Crash-site :**  
+  - Envoie massif de paquets lourds pour test de résistance
+- **Big Serv :**  
+  - Test de charge personnalisé (requêtes, cadence, etc.)
+- **Hash Decrypter**
 
-* [Disclaimer](#Disclaimer)
+---
 
-* [Installation sur Linux](#Installation-sur-Linux)
+## Installation
 
-* [Installation sur Windows](#Installation-sur-Windows)
-
-
-
-Nous Soutenir
-=
-
-BTC: 1LvSfG69S1UBsQTrXobY7ZoJYAkvo2psKD
-
-
-
-Contributeurs
-=
-
- * ❤️ [H3L](https://github.com/lrhel) ❤
-
- * Merci à [Kwizfreak](https://github.com/kwizfreak) pour avoir développé l'API sur le site [infos-numero.com](https://www.infos-numero.com)
-
-
-
-ReadOnly
-=
-
-Littlebrother est maintenant en **Read only**, il ne sera plus maintenu ni mis à jour et aucune contribution est possible.
-
-On a décidé de passer LittleBrother en Read only par manque de temps pour le developpement et la maintenance. On travail sur un autre outil similaire. Merci pour les issues/PR constructif, merci à ceux qui nous ou soutenu.
-
-Vous pouvez soutenir financierement le prochain projet : **BTC:** `1LvSfG69S1UBsQTrXobY7ZoJYAkvo2psKD`.
-
-
-
-LittleBrother
-=
-
-
-
-LittleBrother est un outil de collectes d'informations (OSINT) qui vise à effectuer des recherches sur une personne française, suisse, luxembourgeoise ou belge. Il fournit divers modules qui permettent des recherches efficaces. LittleBrother ne requiert pas de clé API ni d'identifiant de connexion.
-
-
-
-![](https://i.ibb.co/YdvfVPw/Capture.png)
-
-
-
-Disclaimer
-=
-
-LittleBrother a été développé pour faire des recherches sur soi-même et pour voir les informations privées et sensibles que l'on peut laisser derrière sur les réseaux sociaux. Je n'encourage en aucun cas l'utilisation de cet outil sur une autre personne que soi-même ou d'utiliser cet outil à mauvais escient. Les auteurs de LittleBrother ne peuvent etre tenu pour responsable de l'utilisation de son outil.
-
-
-
-
-
-Installation sur Linux
-=
-
-Il faut avoir `git` et `python3` d'installer sur sa machine
-
-```
-
-    sudo apt install git python3 #sur les distributions utilisant APT (comme la famille Debian)
-
-    git clone https://github.com/Lulz3xploit/LittleBrother
-
-    cd LittleBrother
-
-    python3 -m pip install -r requirements.txt
-
-```    
-
-
-
-Execution Linux
-=
-
-Dans le repertoire de LittleBrother, lancez cette commande pour pouvoir lancer LittleBrother:
-
-```
-
+### Termux (Android) :
+```bash
+pkg update && pkg upgrade
+pkg install git python
+git clone git@github.com:Ttrhh/Osint-serv.git
+cd Osint-serv
+pip install -r requirements.txt
 python3 LittleBrother.py
-
 ```
 
-
-
-Installation sur Windows
-=
-
-- 1. Telecharger [LittleBrother](https://github.com/lulz3xploit/LittleBrother/archive/master.zip)
-
-- 2. Installez Python depuis le Store Windows
-
-- 4. Dezipper LittleBrother (master.zip)
-
-- 5. Ouvrez `CMD` et allez dans le repertoire **`LittleBrother-master`** via la commande `cd`.
-
-     P.ex: 
-
-```
-
-cd Desktop\
-
-cd LittleBrother-master\
-
-``` 
-
-et executez:
-
-```
-
-    python3 -m pip install -r requirements.txt
-
-```
-
-
-
-Lancer LittleBrother depuis Windows:
-=
-
-- Allez dans le repertoire **LittleBrother-master** comme a son installation et executez la commande: 
-
-```
-
+### Linux :
+```bash
+sudo apt update && sudo apt install git python3 python3-pip
+git clone git@github.com:Ttrhh/Osint-serv.git
+cd Osint-serv
+pip3 install -r requirements.txt
 python3 LittleBrother.py
-
 ```
 
+---
 
+## Utilisation
 
-Discord
-=
+Lance simplement le script :
+```bash
+python3 LittleBrother.py
+```
 
-~~Si vous avez des questions, des idées, des problèmes concernant LittleBrother ou si vous voulez juste suivre l'avancement de ce projet.~~
+Navigue dans le menu principal :
 
-Momentanément clos.
+```
+ [1] Lookup
+ [2] Other tool
+ [3] Profiler
+ [4] Test de charge (Big Serv)
+ [5] Crash-site
+ [6] Clear country
+ [7] Quitter
+```
 
-Compatible
-=
+---
 
-- Windows
+## Avertissement
 
-- MacOS
+> Ce projet est fourni uniquement à des fins éducatives.  
+> L’auteur **ne cautionne** aucune utilisation illégale de ce script.  
+> **Vous êtes responsable** de vos actions.
 
-- Linux
+---
 
+## Auteur
 
+Développé par [Ttrhh](https://github.com/Ttrhh)  
+Projet : [Osint-serv](https://github.com/Ttrhh/Osint-serv)
 
-Python version:
-=
-
-- Python3
-
-
-
-Modules Python
-=
-
-- requests
-
-- bs4
-
-- terminaltables
-
-- colorama
-
-
-
-Fonctionnalites
-=
-
- - Lookup:
-
-	- Phone lookup
-
-	- Email lookup
-
-	- Last name / First name lookup
-
-	- Surname lookup
-
-	- Addresse lookup
-
-	- Mail ip locator
-
-	- Ip locator
-
-	- Bssid locator
-
-	- Exif read
-
-	- Google search
-
-	- Twitter
-
-	- Instagram
-
-	- Facebook
-
-	- LinkedIn employee search (New !)
-
-	- Hash Bruteforce (New !)
-
-
-
- - Autre outils:
-
-
-
-	- Hash Bruteforce
-
-
-
-- Profiler
-	- Profiler an profile
-
-	- Database management
-
-	- Profile creator
+---
